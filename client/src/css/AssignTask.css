@@ -1,0 +1,117 @@
+/* assignTask.css */
+
+.assign-task-page {
+    padding: 40px;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    min-height: 100vh;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0b3d91;
+  }
+  
+  /* Table Styling */
+  .custom-table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+  }
+  
+  .custom-table th {
+    background-color: #003366;
+    color: #ffffff;
+  }
+  
+  .custom-table tr:hover {
+    background-color: #e6f2ff;
+    transition: background 0.3s ease;
+  }
+  
+  /* Modal Form */
+  .assign-form input,
+  .assign-form textarea {
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .assign-form .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .assign-form .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .assign-form .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .assign-form .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* 🔽 Responsive Design */
+  @media (max-width: 768px) {
+    .assign-task-page {
+      padding: 20px 15px;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .custom-table {
+      font-size: 14px;
+      overflow-x: auto;
+      display: block;
+      white-space: nowrap;
+    }
+  
+    .custom-table th,
+    .custom-table td {
+      padding: 8px 10px;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .form-actions .btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 1.3rem;
+    }
+  
+    .assign-task-page {
+      padding: 10px;
+    }
+  }
+  

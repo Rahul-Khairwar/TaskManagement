@@ -1,0 +1,60 @@
+/* Modern Attractive Footer Styles */
+
+.footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f0f0f0;
+  padding: 50px 25px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  border-top: 4px solid #00d1ff;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-left: 4px solid #00d1ff;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #cbd6e2;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: #00d1ff;
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #aab8c2;
+  font-size: 14px;
+  border-top: 1px solid #334a5f;
+  padding-top: 20px;
+}
+
+.footer-bottom span {
+  color: #00d1ff;
+  font-weight: 500;
+}

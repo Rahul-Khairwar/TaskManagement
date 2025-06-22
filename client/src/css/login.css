@@ -1,0 +1,119 @@
+/* Stylish Modern Login Page CSS */
+
+/* Main Container */
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f8f9fc, #e0ecf9);
+}
+
+/* Left Box */
+.left-box {
+  flex: 1;
+  background: linear-gradient(160deg, #ff758c, #ff7eb3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 4px 0 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.left-box h2 {
+  font-size: 42px;
+  margin-bottom: 14px;
+  font-weight: 800;
+}
+
+.left-box p {
+  font-size: 18px;
+  opacity: 0.95;
+  text-align: center;
+  max-width: 320px;
+}
+
+/* Right Form Area */
+.right-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fbfd;
+}
+
+/* Form Box */
+.form-box {
+  width: 90%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Form Labels & Inputs */
+.form-box .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+  display: block;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-box input:focus {
+  border-color: #b23ecf;
+  box-shadow: 0 0 5px rgba(178, 62, 207, 0.4);
+  outline: none;
+}
+
+/* Register Link */
+.log {
+  color: #b23ecf;
+  font-weight: 600;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.log:hover {
+  color: #8e2de2;
+}
+
+/* Submit Button - New Stylish Look */
+.form-box button {
+  width: 100%;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(78, 0, 181, 0.25);
+  transition: all 0.3s ease;
+}
+
+.form-box button:hover {
+  background: linear-gradient(to right, #9d50bb, #6e48aa);
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(111, 41, 167, 0.3);
+}
