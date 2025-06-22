@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
-import "../css/clientdashboard.css"; // ✅ Link the CSS file
+import "../css/ClientDashBoard.css"
 
 const ClientDashBoard = () => {
   const navigate = useNavigate();
