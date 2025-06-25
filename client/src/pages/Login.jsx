@@ -15,7 +15,7 @@ const Login = () => {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        let api = `${BASE_URL}/login`;
+        let api = `${BASE_URL}/user/login`;
         const res = await axios.post(api,{email,password});
         console.log(res.data)
         localStorage.setItem("user",res.data.User77.name);

@@ -24,7 +24,7 @@ const AssignTask = () => {
 
   const loadData = async () => {
     try {
-      const response = await axios.get(`${BASE_URL}/showuserdata`);
+      const response = await axios.get(`${BASE_URL}/user/showuserdata`);
       setMydata(response.data);
     } catch (error) {
       console.log(error);
@@ -48,7 +48,7 @@ const AssignTask = () => {
     }
 
     try {
-      const response = await axios.post(`${BASE_URL}/assigntask`, {
+      const response = await axios.post(`${BASE_URL}/user/assigntask`, {
         ...input,
         userid,
       });

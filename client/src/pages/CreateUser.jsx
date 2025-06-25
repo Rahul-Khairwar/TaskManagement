@@ -12,7 +12,7 @@ const CreateUser = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const api = `${BASE_URL}/usercreation`;
+    const api = `${BASE_URL}/user/usercreation`;
     try {
       const response = await axios.post(api, { name, email, designation });
       console.log(response);

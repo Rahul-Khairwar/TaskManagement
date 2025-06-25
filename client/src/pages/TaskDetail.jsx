@@ -19,7 +19,7 @@ const TaskDetail=()=>{
      const itemsPerPage = 3; // 👈 3 tasks per page // 2
 
     const loadData=async()=>{
-          let api=`${BASE_URL}/taskdetail`
+          let api=`${BASE_URL}/user/taskdetail`
           try {
               const response= await axios.get(api);
               console.log(response.data);
@@ -34,7 +34,7 @@ const TaskDetail=()=>{
     }, [])
 
    const changeTaskStatus=async(id)=>{
-    let api=`${BASE_URL}/changetaskstatus/?id=${id}`;
+    let api=`${BASE_URL}/user/changetaskstatus/?id=${id}`;
     try {
           const response = await axios.get(api);
           console.log(response);
@@ -46,7 +46,7 @@ const TaskDetail=()=>{
    }
 
   const myDel=async(id)=>{
-  let api=`${BASE_URL}/taskdelete`;
+  let api=`${BASE_URL}/user/taskdelete`;
   const res= await axios.post(api,{userid:id})
   console.log(res.data)
   loadData();
